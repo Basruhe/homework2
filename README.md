@@ -1,3 +1,15 @@
+# Homework feedback notes:
+
+Nothing special for assignment 1 and 2!
+
+Assignment 3: I tried to separate the assignment in smaller portions. I build a filter function for the separate age categories, and a grouping object for them to be added to. Unfortunately my attempts to use reduce to group the filtered arrays did not work out, so my approach was not the right one. 
+
+Bas
+
+
+
+
+
 # Homework Assignment
 
 This assignment covers the first week of the Intermediate Bootcamp. This repository contains 2 test files, each covering a single task. The order of the tasks does not matter. **You can complete them in any order.** Try to complete as many of them as you can.
