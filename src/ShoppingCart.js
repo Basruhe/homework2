@@ -32,7 +32,7 @@ class shopper {
   } 
 }
 
-// exporting the shopper class
+// Exporting the shopper class
 module.exports = shopper
 
 // Testing to check whether an empty cart results in an empty array:
