@@ -9,33 +9,35 @@
 // 5. Make a button with the text `DARTH VADER` on it
 // 6. When you click the button it fetches data from `https://swapi.co/api/people/4/` and displays it on the page
 
-
 // Creating destination element
 const outputContainer = document.getElementById("swOutput");
 
-// Fetching skywalker code
+// Fetching skywalker information
 fetch("https://swapi.co/api/people/1/") 
   .then(response => response.json())
   .then(result => { 
     console.log (typeof(result));
     console.log (result);
-    console.log (result.name);
-    outputContainer.innerHTML = result.name;
+    console.log (JSON.stringify(result));
+    outputContainer.innerHTML = JSON.stringify(result);
+    // outputContainer.innerHTML = result.name;
   })
 
-// Fetching vader code
+// Fetching vader information
 const theDarkSide = function () {
   fetch("https://swapi.co/api/people/4")
   .then (response => response.json())
   .then (newResult => {
-    console.log (newResult.name);
-    outputContainer.innerHTML = newResult.name;
+    console.log (newResult);
+    outputContainer.innerHTML = JSON.stringify(newResult);
   })
 }
 
 // Button interaction
 const vaderButtonPressed = document.getElementById("vaderButton")
 vaderButtonPressed.addEventListener("click", runGetName => {
-  // runGetName.preventDefault();
   theDarkSide()
 })
+
+// TO DO (if time allows)
+// object destructuring? to print properties in a more readable format.
