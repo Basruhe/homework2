@@ -44,42 +44,10 @@ cart.addItem("banana", 10, 0.80)
 // console.log (cart.items);
 cart.getItems()
 
-// Testing a method to clear the item array
-// const testShopper = [1, 2, 3, 4]
-// console.log (testShopper)
-//   while (testShopper.length > 0) {
-//     testShopper.pop();
-//     console.log ("Contents of the shopper after clearing:", testShopper)
-//   }
-
 // method call to clear the cart.
 cart.clear()
 // check whether getItems results in an empty array.
 cart.getItems()
-
-
-// testing map method
-cart.addItem("banana", 10, 0.80);
-cart.addItem("pear", 6, 1.10);
-const fullcart = cart.items;
-// console.log (fullcart);
-// there are now 2 items in the cart
-// desired output: the added value of each items' price*quantity
-
-// const itemvalues = fullcart.map(function(itemvalue) {
-//   console.log ("check", itemvalue.price);
-//   return itemvalue.price * itemvalue.quantity
-// })
-// console.log (itemvalues)
-// const checkout = itemvalues.reduce(function(acc, value) {
-//   return acc + value
-// },0)
-// console.log (checkout)
-
-// const checkout = fullcart.reduce(function(acc,fullcart){
-//   return acc + fullcart.price * fullcart.quantity
-// },0)
-// console.log (checkout);
 
 // method call to calculate total cart checkout value
 cart.total()
