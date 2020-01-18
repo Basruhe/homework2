@@ -1,5 +1,5 @@
 // Assignment 1
-// Creating the cart Class
+// Creating the "cart" Class
 
 class shopper {
   constructor () {
